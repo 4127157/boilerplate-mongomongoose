@@ -117,7 +117,7 @@ const queryChain = (done) => {
     queryResult.select({name:1, age:0, favoriteFoods:1});
     queryResult.exec((err, data) => {
         if(err)
-            result console.error(err);
+            return console.error(err);
         done(null, data);
     });
 };
